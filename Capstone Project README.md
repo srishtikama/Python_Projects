@@ -21,16 +21,20 @@ I applied the below pre-processing functions to the dataset. To make this proces
 - Stem words using PorterStemmer
 
 ## Statistical Model Findings
-For each model, I applied the TF-IDF vectorizer to transform the review text into numerical vectors indicating the importance of each word in the text. To then classify and predict the number of stars for each review, I applied Logistic Regression, SVM, and Random Forest models and below is a summary of my results:
+For each model, I applied the TF-IDF vectorizer to transform the review text into numerical vectors indicating the importance of each word in the text. To then classify and predict the number of stars for each review, I applied Logistic Regression, and SVM models and below is a summary of my results:
+
 ### 1. Logistic Regression
+Using a standard Logisitic Regression model with max iterations equal to 1,000, the training, validation, and testing accuracy was about 64% for all classes. When looking at the confusion matrix of the testing results, reviews with 1 star and 5 stars were predicted more accurately (79% and 86% respectively) compared the 2, 3, and 4 stars (21%, 28%, and 39% respectively). For 2, 3, and 4 star reviews, the model had a similar accuracy when predicting the correct classification and the stars nearby. For example, if the actual review was 3 stars, the model predicted 3 stars with 28% accuracy but also predicted 4 stars with 31% accuracy. Therefore, logistic regression seems to predict extreme reviews more accuractly than reviews in the middle.
+
 ### 2. SVM
-### 3. Random Forest
+
+
 
 ### Final Findings
 
 
 # Next Steps
-Although the statistical models listed above had reasonably good accuracy scores, I am hoping to improve my accuracy scores first by using Gensim's Word2Vec instead of TF-IDF and seeing whether the Cross Bag-of-Words or the Skipgram methods provide a better accuracy. Then, I am also hoping to see if using a Keras Neural Network will improve my accuracy score. 
+Although the statistical models listed above had reasonably good accuracy scores, I am hoping to improve my accuracy scores first by using Gensim's Word2Vec instead of TF-IDF and seeing whether the Cross Bag-of-Words or the Skipgram methods provide a better accuracy. Then, I am also hoping to see if using a Keras Neural Network will improve my accuracy score. I am also considering decreasing the amount of data I am using to train the model as both Logistic Regression and SVM took hours to train and compute the accuracy scores. 
 
 # Link to Code
 [prompt.ipynb](https://github.com/srishtikama/Python_Projects/blob/main/prompt.ipynb)
