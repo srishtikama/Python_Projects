@@ -17,9 +17,7 @@ The EDA I conducted includes:
 - The distribution of reviews with 1-5 stars, with the majority of reviews being 5 star reviews
 - Analyzing the the length of reviews, with shorter reviews being most common (about 100 words in length)
 - Displaying the word clouds of positive and negative reviews using sentiment analysis. 'Place' and 'food' were the most common words in all reviews and they showed up in both positive and negative reviews.
-- Seasonality of the review ...
-- Funny distribution
-- Usefulness distribution
+- A distribution of the mean stars by year and month. On average, the mean stars was around 3.5 - 4.0 stars but in 2019 there is a sharp increase in the mean to almost 5 stars. On a monthly basis, the average stars is around 3.7 each month.
 
 ### 2. Data Pre-Processing
 I applied the below pre-processing functions to the dataset. To make this process faster and easier, the dataframe will be transformed to a Dask dataframe with a specified number of partitions based on a chunk size of 10,000.
@@ -43,7 +41,7 @@ The K-Nearest Neighbors model is able to classify a data point based on the majo
 Similar to Decision Trees, the Random Forest Classifier builds multiple decision trees and aggregates their results. The Random Forest model performed better than a single decision tree but still the predictive accuracy was not much higher than the decision tree model.
 
 ## Recommended Model: Neural Network
-The best-performing model in this study was a Neural Network, achieving a classification accuracy of approximately 69%. The neural network was chosen due to its ability to handle complex, non-linear relationships in the data, particularly when dealing with high-dimensional inputs like text data.
+The best-performing model in this study was a Neural Network, achieving a predictive classification accuracy of approximately 63%. The neural network was chosen due to its ability to handle complex, non-linear relationships in the data, particularly when dealing with high-dimensional inputs like text data.
 
 Architecture:
 - Input Layer: Inputs the preprocessed features including TF-IDF vectors from review text, encoded categorical, and scaled numerical variables.
