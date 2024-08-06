@@ -2,10 +2,7 @@
 How accurately can you predict the number of stars a customer gives based on the review text, business type, location, and other factors given in the review.
 
 # Data
-To answer this question, I can use a yelp review data set that has already collected and saved from my company's machine learning S3 bucket. The total population of Yelp reviews is about 6.3 million but I will only be using a subset of 990,000 reviews for my analyis because of processing power constraints. Although there are 15 columns (excluding the target column) that can be used, for the initial analysis and model development, I chose to focus solely on the Yelp review text (r_text) column to conduct EDA and develop my models. 
-
-### Columns:
-Although the full dataset includes 16 columns, a subset of applicable features were used to develop the models:
+To answer this question, I can use a yelp review data set that has already collected and saved from my company's machine learning S3 bucket. The total population of Yelp reviews is about 990,000 but I will only be using a subset of 300,000 reviews for my analyis because of processing power constraints. Although there are 15 columns (excluding the target column) that can be used, for the initial analysis and model development, I chose to focus on a subset of columns for EDA and model development including:
 - Review Text: The content of the customer review.
 - Location: The geographical location of the business including postal code, longitude, and latitude.
 - Review Factors: The usefulness, whether the review was funny, and the date of the the review
