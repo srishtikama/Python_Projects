@@ -52,7 +52,12 @@ The ability to predict star ratings based on review text and other features is i
 2. Improve Customer Experience: Insights from the model can highlight which aspects of a business are positively or negatively impacting customer satisfaction, guiding improvements.
 3. Strategic Decision Making: Understanding the factors that influence star ratings can help businesses tailor their offerings, marketing strategies, and customer service to align more closely with customer expectations.
 
-In summary, the neural network model, with its robust prediction capability, offers a powerful tool for business owners to gain deeper insights into customer satisfaction and make data-driven decisions to enhance their services.
+## Next Steps & Recommendations
+- Targeted Improvement Areas: Add in new features such as business type or business attributes and see if the model's accuracy improves. This will flag if those features contribute to higher or lower ratings and implement changes to address these specific issues.
+- Customer Feedback Management: Implement a system where the predicted ratings from the model trigger proactive customer service responses. For instance, if a low rating is predicted, the business could reach out to the customer for feedback or offer a resolution before the review is posted.
+- Enhancing Customer Experience: Analyze the features that the model identifies as most influential in determining star ratings using a SHAP Analysis or something similar. This information can be used to enhance the customer experience in these areas.
+- Data-Driven Marketing Strategies: Utilize the model's insights to segment your customers based on predicted satisfaction levels. Tailor marketing campaigns to target different segments, such as offering loyalty programs to highly satisfied customers or sending personalized offers to those predicted to give lower ratings.
+Leverage predicted high ratings to promote your business.
 
 # Link to Code
 (https://github.com/srishtikama/Python_Projects/blob/91b50bcb0dd6f01262fb01270989afb0648234f3/Final%20Capstone%20Script.ipynb)
