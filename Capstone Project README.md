@@ -55,5 +55,5 @@ The ability to predict star ratings based on review text and other features is i
 In summary, the neural network model, with its robust prediction capability, offers a powerful tool for business owners to gain deeper insights into customer satisfaction and make data-driven decisions to enhance their services.
 
 # Link to Code
-https://github.com/srishtikama/Python_Projects/blob/766beed4fbe6b058d2dbdf0fbc750237c036c4b2/Initial%20Report%20%26%20EDA.ipynb
+(https://github.com/srishtikama/Python_Projects/blob/91b50bcb0dd6f01262fb01270989afb0648234f3/Final%20Capstone%20Script.ipynb)
 
